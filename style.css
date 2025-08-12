@@ -1,75 +1,83 @@
-/* styles.css */
-
+/* Base styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
   max-width: 800px;
   margin: 40px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
 }
 
+/* Header / Title */
 h1 {
-  color: #222;
-  font-size: 2em;
-  margin-bottom: 0.5em;
+  font-size: 2.5em;
+  margin-top: 20px;
+  margin-bottom: 0.2em;
+  color: #000;
 }
 
+/* Byline styling */
 .byline {
-  font-style: italic;
+  font-size: 0.9em;
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
+/* Image styling with captions */
 .image {
   text-align: center;
   margin: 30px 0;
 }
-
 .image img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
 .image small {
   display: block;
-  margin-top: 5px;
-  color: #888;
+  margin-top: 8px;
+  color: #777;
 }
 
+/* Main article paragraphs */
+p {
+  font-size: 1em;
+  margin-bottom: 1.3em;
+}
+
+/* Highlighted "eligible" section */
 .eligible {
-  background-color: #e6f4ea;
-  padding: 15px 20px;
-  border-left: 6px solid #28a745;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-left: 4px solid #c00;
   margin-top: 40px;
 }
-
 .eligible h3 {
   margin-top: 0;
-  color: #2d6a4f;
+  color: #c00;
 }
 
+/* Links */
 a {
-  color: #1a73e8;
+  color: #c00;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
+/* Horizontal rule */
 hr {
-  margin-top: 40px;
   border: none;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ddd;
+  margin: 40px 0;
 }
 
-footer {
-  font-size: 0.9em;
+/* Footer or fine print */
+footer, .footer {
+  font-size: 0.8em;
   color: #777;
-  margin-top: 40px;
   text-align: center;
+  margin-top: 40px;
 }
+
