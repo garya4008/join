@@ -1,83 +1,89 @@
-/* Base styles */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 850px;
+  padding: 20px;
   background-color: #ffffff;
-  color: #333;
-  max-width: 800px;
-  margin: 40px auto;
-  line-height: 1.6;
-  padding: 0 20px;
+  color: #111;
 }
 
-/* Header / Title */
 h1 {
-  font-size: 2.5em;
-  margin-top: 20px;
-  margin-bottom: 0.2em;
-  color: #000;
+  font-size: 2.2em;
+  color: #c60000; /* CBC Red */
+  margin-bottom: 10px;
+  line-height: 1.2;
 }
 
-/* Byline styling */
+h2 {
+  font-size: 1.5em;
+  margin-top: 40px;
+  color: #111;
+}
+
 .byline {
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 30px;
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
 }
 
-/* Image styling with captions */
 .image {
-  text-align: center;
   margin: 30px 0;
+  text-align: center;
 }
+
 .image img {
   max-width: 100%;
-  height: auto;
-}
-.image small {
-  display: block;
-  margin-top: 8px;
-  color: #777;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Main article paragraphs */
+.image figcaption {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+}
+
 p {
-  font-size: 1em;
-  margin-bottom: 1.3em;
+  margin-bottom: 20px;
+  font-size: 1.05em;
 }
 
-/* Highlighted "eligible" section */
+ul {
+  padding-left: 20px;
+}
+
 .eligible {
   background-color: #f2f2f2;
-  padding: 15px;
-  border-left: 4px solid #c00;
+  padding: 20px;
+  border-left: 5px solid #c60000;
+  border-radius: 4px;
   margin-top: 40px;
 }
-.eligible h3 {
-  margin-top: 0;
-  color: #c00;
+
+.eligible ul li {
+  margin-bottom: 8px;
+  font-weight: 500;
 }
 
-/* Links */
 a {
-  color: #c00;
+  color: #0055a5;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
 
-/* Horizontal rule */
 hr {
   border: none;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #ccc;
   margin: 40px 0;
 }
 
-/* Footer or fine print */
-footer, .footer {
-  font-size: 0.8em;
+.footer-note {
+  font-size: 0.9em;
   color: #777;
-  text-align: center;
-  margin-top: 40px;
+  text-align: left;
 }
-
